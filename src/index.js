@@ -17,6 +17,13 @@ const userReducer = (state = { username: '', userImg: null }, action) => {
     return newState
   }
 
+  if (action.type === 'LOGOUT') {
+    const newState = cloneDeep(state);
+    newState.username = '';
+    newState.userImg = null;
+    return newState;
+  }
+
   return state;
 }
 
