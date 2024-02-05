@@ -12,8 +12,8 @@ const userReducer = (state = { username: '', userImg: null }, action) => {
 
   if (action.type === 'LOGIN') {
     const newState = cloneDeep(state);
-    newState.user.username = action.payload.username;
-    newState.user.userImg = action.payload.userImg;
+    newState.username = action.payload.username;
+    newState.userImg = action.payload.userImg;
     return newState
   }
 
@@ -24,7 +24,7 @@ const cartReducer = (state = { itemList: [] }, action) => {
 
   if (action.type === 'ADD_TO_CART') {
     const newState = cloneDeep(state);
-    newState.cart.itemList.push(action.payload.item);
+    newState.itemList.push(action.payload.item);
     return newState;
   }
 
