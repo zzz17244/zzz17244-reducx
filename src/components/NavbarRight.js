@@ -22,8 +22,8 @@ function NavbarRight() {
         <div style={{ height: '100%', display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
             {userloggedIn ?
                 <>
-                    <span style={{ borderRadius: '50%', backgroundImage: `url(${userImg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', height: '30px', width: '30px', marginRight: '5px' }}></span>
-                    <span style={{ marginRight: '20px' }}> {username} </span>
+                    <span style={{ marginRight: '5px' }}> {username} </span>
+                    <span style={{ borderRadius: '50%', backgroundImage: `url(${userImg})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center center', height: '30px', width: '30px', marginRight: '20px' }}></span>
                 </>
                 :
                 <span onClick={login} style={{ marginRight: '20px', cursor: 'pointer' }}>Click to Login </span>
